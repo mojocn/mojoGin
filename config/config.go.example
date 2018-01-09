@@ -6,3 +6,6 @@ var DBName = "dbname"
 var DBPassword = "password"
 var DBUser = "username"
 var DBPort = 3306
+const RedisAddr = "127.0.0.1:6379"
+const RedisPassword = ""
+const RedisDBIndex = 0

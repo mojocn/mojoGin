@@ -5,7 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func HomeIndex(c *gin.Context) {
+func HomeGet(c *gin.Context) {
 
 	id := c.Query("id")
 	page := c.DefaultQuery("page", "0")

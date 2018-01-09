@@ -22,9 +22,9 @@ func init() {
 	DB = db
 
 	RedisClient = redis.NewClient(&redis.Options{
-		Addr:     "localhost:6379",
-		Password: "", // no password set
-		DB:       0,  // use default DB
+		Addr:     config.RedisAddr,
+		Password: config.RedisPassword, // no password set
+		DB:       config.RedisDBIndex,  // use default DB
 	})
 
 	pong, err := RedisClient.Ping().Result()
