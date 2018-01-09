@@ -1,0 +1,8 @@
+package config
+
+
+var DBHost = "localhost"
+var DBName = "dbname"
+var DBPassword = "password"
+var DBUser = "username"
+var DBPort = 3306
